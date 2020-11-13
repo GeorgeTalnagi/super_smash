@@ -1,6 +1,9 @@
-require "super_smash/version"
-
-module SuperSmash
-  class Error < StandardError; end
-  # Your code goes here...
-end
+require_relative "./super_smash/version"
+require_relative "./super_smash/cli"
+require_relative "./super_smash/api"
+require_relative "./super_smash/character"
+require 'rest-client'
+require 'json'
+require 'httparty'
+require 'pry'
+require 'colorize'
