@@ -5,5 +5,4 @@ require_relative "./super_smash/character"
 require 'rest-client'
 require 'json'
 require 'httparty'
-require 'pry'
 require 'colorize'

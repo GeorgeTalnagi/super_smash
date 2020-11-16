@@ -26,12 +26,11 @@ class Character
         @@all.each do |character|
             character_info << 
             "#{"Name:".colorize(:background => :black)} #{character.name.colorize(:background => :black)}
-             \n#{"Tier Ranking:".colorize(:background => :black)} #{character.tierdata.colorize(:background => :black)}
-             \n#{"Weight:".colorize(:background => :black)} #{character.weight.colorize(:background => :black)}
-             \n#{"Fallspeed:".colorize(:background => :black)} #{character.fallspeed.colorize(:background => :black)}
-             \n#{"Walljump:".colorize(:background => :black)} #{character.walljump.colorize(:background => :black)}
-             \n#{"Guide:".colorize(:background => :black)} #{character.guide.colorize(:background => :black)}
-            "
+            \n#{"Tier Ranking:".colorize(:background => :black)} #{character.tierdata.colorize(:background => :black)}
+            \n#{"Weight:".colorize(:background => :black)} #{character.weight.colorize(:background => :black)}
+            \n#{"Fallspeed:".colorize(:background => :black)} #{character.fallspeed.colorize(:background => :black)}
+            \n#{"Walljump:".colorize(:background => :black)} #{character.walljump.colorize(:background => :black)}
+            \n#{"Guide:".colorize(:background => :black)} #{character.guide.colorize(:background => :black)}"  
         end 
         character_info
     end 
@@ -46,12 +45,9 @@ class Character
         end 
     end 
 
-    #used to set the logic of input so that the number can never exceed the amount of characters 
+    #used to set the logic of input so that the number picked by the user can never exceed the amount of total characters 
     def self.names 
-        names = []
-        @@all.each do |name|
-        names << name 
-        end 
+        @@all.collect { |name| }
     end
 
 end 

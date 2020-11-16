@@ -3,3 +3,4 @@
 require './lib/super_smash'
 
 SuperSmash::CLI.new.call
+

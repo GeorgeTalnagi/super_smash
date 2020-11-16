@@ -13,6 +13,7 @@ class SuperSmash::CLI
         puts "\nPlease select the number for a character or type exit:\n".colorize(:blue).colorize(:background => :black)
     end 
 
+    #Shows the list of characters and asks for a choice
     def input 
         Character.list
         input = gets.chomp
@@ -43,6 +44,7 @@ class SuperSmash::CLI
         end 
     end 
         
+    #handles end or re-run 
     def input_2
         input = gets.chomp
         if 
@@ -66,5 +68,6 @@ class SuperSmash::CLI
     def clear
         system("clear")
     end
+    
   
 end 
